@@ -1,4 +1,7 @@
 package com.springboot.jpa.data.repository;
 
-public interface ProductRepository extends org.springframework.data.jpa.repository.JpaRepository<com.springboot.jpa.data.entity.Product, java.lang.Long> {
+import com.springboot.jpa.data.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }

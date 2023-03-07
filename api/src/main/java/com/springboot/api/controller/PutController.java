@@ -1,6 +1,6 @@
-package com.springboot.jpa.controller;
+package com.springboot.api.controller;
 
-import com.springboot.jpa.dto.MemberDTO;
+import com.springboot.api.dto.MemberDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

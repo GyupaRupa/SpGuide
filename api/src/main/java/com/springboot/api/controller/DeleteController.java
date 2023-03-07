@@ -1,4 +1,4 @@
-package com.springboot.api.controller;
+package com.springboot.jpa.controller;
 
 import org.springframework.web.bind.annotation.*;
 

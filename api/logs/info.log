@@ -1,0 +1,7 @@
+[2023-03-04 17:12:26.128] [INFO ] [Test worker] com.springboot.api.ApiApplicationTests Starting ApiApplicationTests using Java 17.0.4.1 on DESKTOP-4O8GR73 with PID 10856 (started by tuv in C:\Users\tuv\Documents\SpGuide\api)
+[2023-03-04 17:12:26.132] [INFO ] [Test worker] com.springboot.api.ApiApplicationTests No active profile set, falling back to default profiles: default
+[2023-03-04 17:12:29.059] [INFO ] [Test worker] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2023-03-04 17:12:29.970] [INFO ] [Test worker] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2023-03-04 17:12:30.022] [INFO ] [Test worker] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2023-03-04 17:12:30.069] [INFO ] [Test worker] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2023-03-04 17:12:30.378] [INFO ] [Test worker] com.springboot.api.ApiApplicationTests Started ApiApplicationTests in 4.889 seconds (JVM running for 7.813)

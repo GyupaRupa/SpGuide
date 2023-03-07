@@ -1,6 +1,10 @@
 package com.springboot.api.controller;
 
 import com.springboot.api.dto.MemberDTO;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -8,8 +12,12 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/v1/get-api")
 public class GetController {
+
+    private final Logger LOGGER = LoggerFactory.getLogger(GetController.class);
+
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String getHello() {
+        LOGGER.info("getHello 메서드가 호출되었습니다.");
         return "Hello World";
     }
 
@@ -20,6 +28,7 @@ public class GetController {
 
     @GetMapping(value = "/variable1/{variable}")
     public String getVariable1(@PathVariable String variable) {
+        LOGGER.info("@Pathvariable을 통해 들어온 값: {}", variable);
         return variable;
     }
 
@@ -28,11 +37,12 @@ public class GetController {
         return var;
     }
 
+    @ApiOperation(value = "Get 메서드 예제", notes = "@RequestParam을 활용한 Get 메서드")
     @GetMapping(value = "/request1")
     public String getRequestParam1(
-            @RequestParam String name,
-            @RequestParam String email,
-            @RequestParam String organization
+            @ApiParam(value = "이름", required = true) @RequestParam String name,
+            @ApiParam(value = "이메일", required = true) @RequestParam String email,
+            @ApiParam(value = "회사", required = true) @RequestParam String organization
     ) {
         return name + " " + email + " " + organization;
     }

@@ -1,7 +1,7 @@
-package com.springboot.api.controller;
+package com.springboot.jpa.controller;
 
 
-import com.springboot.api.dto.MemberDTO;
+import com.springboot.jpa.dto.MemberDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.springboot.api.dto;
+package com.springboot.jpa.dto;
 
 import lombok.Getter;
 import lombok.Setter;

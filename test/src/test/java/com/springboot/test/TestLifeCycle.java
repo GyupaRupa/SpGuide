@@ -17,13 +17,13 @@ public class TestLifeCycle {
     }
 
     @BeforeEach
-    static void beforeEach() {
+    void beforeEach() {
         System.out.println("## BeforeEach Annotation 호출 ##");
         System.out.println();
     }
 
     @AfterEach
-    static void afterEach() {
+    void afterEach() {
         System.out.println("## AfterEach Annotation 호출 ##");
         System.out.println();
     }
